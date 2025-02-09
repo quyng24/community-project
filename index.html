@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ô Nhiễm Không Khí</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./fonts/fontawesome-free-6.5.2-web/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+</head>
+<body>
+    <div class="section1">
+        <div class="container">
+            <div class="row">
+                <h2 class="section1__title text-center">VIETNAM POLLUTED</h2>
+                <p class="section1__desc text-center">Vì cuộc sống của chúng ta hiện tại</p>
+            </div>
+        </div>
+    </div>
+    <div class="section2">
+        <div class="container">
+            <div class="section2__wrap row">
+                <div class="col-xs-2">
+                    <a href="#home"><img class="section2__img" src="./img/flag.webp" alt=""></a>
+                </div>
+                <div class="col-xs-10">
+                    <ul class="section2__nav">
+                        <li><a class="section2__item" href="#home">Trang chủ</a></li>
+                        <li><a class="section2__item" href="#causes">Nguyên nhân</a></li>
+                        <li><a class="section2__item" href="#effects">Tác động</a></li>
+                        <li><a class="section2__item" href="#solutions">Giải pháp</a></li>
+                        <li><a class="section2__item" href="#contact">Liên hệ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="home" class="section3 mg-100">
+        <div class="container">
+            <div class="section3__content">
+                <h2 class="section3__title ">Ô Nhiễm Không Khí <br> Mối Nguy Hiểm Thầm Lặng</h2>
+                <p class="section3__desc ">Cảm ơn bạn đã quan tâm đến vấn đề ô nhiễm không khí tại Việt Nam, đặc biệt là tại Hà Nội. 
+                Đây là một vấn đề nhức nhối, ảnh hưởng trực tiếp đến sức khỏe và chất lượng cuộc sống của người dân.</p>
+                <a href="https://www.iqair.com/vi/vietnam?srsltid=AfmBOoqVViAqruvvzhkp6Bs1_Q4wKFxQudFuRuTI2bxjaCtiMVru600X" class="section3__cta btn">Tìm hiểu về bụi mịn <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+    <div id="causes" class="section4 mg-100">
+        <div class="container">
+            <div class="row section4__content">
+                <h2 class="text-center">Sơ qua về ô nhiễm không khí tại Việt Nam</h2>
+                <ul>
+                    <li><strong>Ô nhiễm không khí là gì?</strong> Giải thích khái niệm ô nhiễm không khí,
+                    các tác nhân gây ô nhiễm (bụi mịn PM2.5, PM10, khí thải từ phương tiện giao thông, 
+                    hoạt động công nghiệp, v.v.), và hậu quả của ô nhiễm không khí đối với sức khỏe con người và môi trường.</li>
+                    <li><strong>Thực trạng ô nhiễm không khí tại Việt Nam và Hà Nội:</strong> Cung cấp số liệu thống kê, 
+                    báo cáo về tình trạng ô nhiễm không khí tại Việt Nam nói chung và Hà Nội nói riêng. 
+                    So sánh với các thành phố khác trên thế giới, chỉ ra mức độ nghiêm trọng của vấn đề.</li>
+                    <li><strong>Nguyên nhân gây ô nhiễm không khí tại Hà Nội:</strong> 
+                        Phân tích các nguyên nhân chính gây ô nhiễm không khí tại Hà Nội, 
+                        bao gồm: Giao thông, Đốt rác, Công nghiệp, Xây dựng.</li>
+                </ul>
+            </div>
+            <div class="row section4__chart">
+                <!-- Khu vực biểu đồ -->
+                <div class="section4__map col-xs-6 box left">
+                    <canvas id="pollutionChart"></canvas>
+                </div>
+            
+                <!-- Khu vực giải thích -->
+                <div class="section4__infomation col-xs-6 box right">
+                    <div>
+                        <h1>Các chất gây ô nhiễm không khí</h1>
+                        <ul>
+                            <li>1️⃣ CO (Carbon Monoxide - CO): 
+                            Khí thải từ xe cộ, lò sưởi, lò đốt than, cháy rừng. 
+                            Đặc biệt nhiều trong không khí khi đốt nhiên liệu hóa thạch không hoàn toàn.</li>
+                            <li>2️⃣ NO (Nitric Oxide - NO): 
+                            Phát sinh từ động cơ xe, công nghiệp, nhà máy nhiệt điện than.
+                            Hình thành khi đốt nhiên liệu ở nhiệt độ cao.
+                            </li>
+                            <li>3️⃣ NO₂ (Nitrogen Dioxide - NO₂): 
+                            Được sinh ra từ khí NO phản ứng với oxy.
+                            Chủ yếu từ khí thải xe máy, nhà máy công nghiệp.
+                            </li>
+                            <li>O₃ (Ozone tầng mặt đất - O₃): 
+                            Không được thải ra trực tiếp mà hình thành từ phản ứng hóa học giữa NO₂, CO, VOCs dưới ánh sáng mặt trời.              
+                            </li>
+                            <li>5️⃣ PM10 (Bụi mịn có kích thước ≤ 10μm): 
+                            Bụi từ đường phố, công trình xây dựng, đốt rác, nhà máy, cháy rừng.
+                            </li>
+                            <li>6️⃣ PM2.5 (Bụi siêu mịn có kích thước ≤ 2.5μm): 
+                            Xuất phát từ khói xe, đốt than, công nghiệp nặng.
+                            </li>
+                            <li> SO₂ (Sulfur Dioxide - SO₂): 
+                            Sinh ra từ đốt than, dầu diesel, công nghiệp luyện kim.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="effects" class="section5 mg-100">
+        <div class="container">
+            <h2 class="text-center">Tác động của ô nhiễm không khí: Những hệ lụy khó lường</h2>
+            <div class="row section5__img mg-100">
+                <img src="./img/tac-hai.png" alt="">
+            </div>
+            <div class="row section5__content mg-100">
+                <img class="box left" src="./img/ah-con-nguoi.jpg" alt="">
+                <div class="section5__text box right">
+                    <p><strong>1. Đối với sức khỏe con người:</strong> 
+                    Ô nhiễm không khí gây ra hàng loạt các vấn đề về sức khỏe, 
+                    ảnh hưởng đến mọi lứa tuổi, đặc biệt là trẻ em, 
+                    người già và những người có bệnh mãn tính.</p>
+                    <ul>
+                        <li>Các bệnh về đường hô hấp: Viêm phổi, 
+                        hen suyễn, viêm phế quản, ung thư phổi,...</li>
+                        <li>Các bệnh về tim mạch: Đột quỵ, nhồi máu cơ tim, cao huyết áp,...</li>
+                        <li>Các bệnh về thần kinh: Alzheimer, Parkinson,...</li>
+                        <li>Các vấn đề khác: Giảm tuổi thọ, ảnh hưởng đến sự phát triển của trẻ em, gây dị tật bẩm sinh,...</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row section5__content mg-100">
+                <div class="section5__text box left">
+                    <p><strong>2. Đối với môi trường:</strong> 
+                    Ô nhiễm không khí không chỉ ảnh hưởng đến 
+                    sức khỏe con người mà còn gây ra những tác động 
+                    tiêu cực đến môi trường.</p>
+                    <ul>
+                        <li>Biến đổi khí hậu: Gây ra hiệu ứng nhà kính, 
+                        làm tăng nhiệt độ trái đất, dẫn đến các hiện tượng thời tiết cực đoan.</li>
+                        <li>Mưa axit: Các chất ô nhiễm trong không khí hòa tan vào nước mưa, 
+                        tạo thành axit, gây hại cho cây cối, đất đai và các công trình xây dựng.</li>
+                        <li>Ô nhiễm nguồn nước: Bụi bẩn và các chất ô nhiễm từ không khí có thể rơi xuống nước,
+                         gây ô nhiễm nguồn nước.</li>
+                        <li>Giảm đa dạng sinh học: Ô nhiễm không khí làm suy giảm môi trường sống 
+                        của nhiều loài động thực vật.</li>
+                    </ul>
+                </div>
+                <img class="box right" src="./img/vuong.png" alt="">
+            </div>
+            <div class="row section5__content mg-100">
+                <img class="box left" src="./img/ah-khin-te.webp" alt="">
+                <div class="section5__text box right">
+                    <p><strong>3. Đối với kinh tế:</strong> 
+                    Ô nhiễm không khí gây ra những thiệt hại không nhỏ cho nền kinh tế.</p>
+                    <ul>
+                        <li>Tăng chi phí y tế: Chi phí điều trị các bệnh liên quan đến ô nhiễm không khí ngày càng tăng cao.</li>
+                        <li>Giảm năng suất lao động: Người lao động bị bệnh do ô nhiễm không khí sẽ nghỉ làm, giảm năng suất.</li>
+                        <li>Ảnh hưởng đến du lịch: Ô nhiễm không khí làm giảm sức hấp dẫn của các điểm du lịch.</li>
+                        <li>Thiệt hại cho nông nghiệp: Ô nhiễm không khí làm giảm năng suất cây trồng, gây thiệt hại cho ngành nông nghiệp.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="solutions" class="section6 mg-100">
+        <h2 class="section6__title text-center ">Giải pháp giảm thiểu ô nhiễm không khí: Cần sự chung tay của tất cả chúng ta</h2>
+        <div class="container">
+            <table>
+                <thead>
+                  <tr>
+                    <th>Giải pháp</th>
+                    <th>Mô tả</th>
+                    <th>Ưu điểm</th>
+                    <th>Nhược điểm</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td rowspan="4">Từ phía chính phủ</td>
+                    <td>Hoàn thiện hệ thống pháp luật</td>
+                    <td>Răn đe, phòng ngừa các hành vi gây ô nhiễm</td>
+                    <td>Cần thời gian để xây dựng và thực thi</td>
+                  </tr>
+                  <tr>
+                    <td>Đầu tư vào giao thông công cộng</td>
+                    <td>Giảm lượng khí thải từ giao thông</td>
+                    <td>Đòi hỏi nguồn vốn đầu tư lớn</td>
+                  </tr>
+                  <tr>
+                    <td>Kiểm soát khí thải từ các nhà máy, xí nghiệp</td>
+                    <td>Giảm lượng khí thải từ hoạt động sản xuất</td>
+                    <td>Tốn kém chi phí đầu tư cho doanh nghiệp</td>
+                  </tr>
+                  <tr>
+                    <td>Nâng cao nhận thức cộng đồng</td>
+                    <td>Nâng cao ý thức, trách nhiệm của người dân</td>
+                    <td>Cần thời gian để thay đổi hành vi</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="5">Từ phía người dân</td>
+                    <td>Sử dụng phương tiện công cộng</td>
+                    <td>Giảm lượng khí thải từ giao thông</td>
+                    <td>Giao thông công cộng chưa phát triển ở nhiều nơi</td>
+                  </tr>
+                  <tr>
+                    <td>Tiết kiệm năng lượng</td>
+                    <td>Giảm lượng khí thải từ các nhà máy điện</td>
+                    <td>Đòi hỏi ý thức và thói quen của người dân</td>
+                  </tr>
+                  <tr>
+                    <td>Không đốt rác, đốt rơm rạ</td>
+                    <td>Giảm lượng khói bụi và khí thải độc hại</td>
+                    <td>Cần sự phối hợp của chính quyền và người dân</td>
+                  </tr>
+                  <tr>
+                    <td>Trồng cây xanh</td>
+                    <td>Cây xanh có khả năng hấp thụ khí độc, tạo không khí trong lành</td>
+                    <td>Cần diện tích đất và sự chăm sóc</td>
+                  </tr>
+                  <tr>
+                    <td>Đeo khẩu trang khi ra đường</td>
+                    <td>Bảo vệ sức khỏe khỏi khói bụi và các chất ô nhiễm</td>
+                    <td>Khẩu trang không thể bảo vệ hoàn toàn</td>
+                  </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div id="contact" class="section7 mg-100">
+        <div class="container display-flex">
+            <section class="section7__form">
+                <h2>Liên hệ với chúng tôi</h2>
+                <p>Hãy để lại email để nhận thông tin mới nhất từ chúng tôi!</p>
+                <form>
+                    <input type="email" placeholder="abc123@gmail.com" required>
+                    <button type="submit">Đăng ký</button>
+                </form>
+            </section>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29793.988458863918!2d105.81636411996007!3d21.022738359983244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab9bd9861ca1%3A0xe7887f7b72ca17a9!2zSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1739103179755!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <footer>
+        <p class="text-center">&copy; 2025 Bảo vệ môi trường - Hãy cùng hành động!</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

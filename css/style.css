@@ -1,0 +1,244 @@
+.display-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+.box {
+  will-change: transform, opacity;
+  transition: 1s;
+}
+
+.left {
+  transform: translateX(-50%);
+}
+
+.right {
+  transform: translateX(50%);
+}
+
+.box.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.mg-100 {
+  margin-bottom: 100px;
+}
+
+.section1 {
+  background: #f4f4f4;
+  height: auto;
+}
+.section1__title {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 0;
+}
+.section1__desc {
+  font-size: 2rem;
+  color: #e74c3c;
+}
+
+.section2 {
+  background: #2c3e50;
+}
+.section2__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section2__img {
+  width: 60%;
+  height: auto;
+  margin-left: 20px;
+}
+.section2__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+.section2__item {
+  padding: 20px 30px;
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.section2__item:hover {
+  color: #e74c3c;
+}
+
+.section3 {
+  height: 100vh;
+  background-image: url(../img/background-6.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section3__content {
+  width: 60%;
+  padding: 40px 0 40px 50px;
+  background: #f4f4f4;
+  border-top-left-radius: 60px;
+  border-bottom-left-radius: 60px;
+  box-shadow: #f4f4f4 0px 20px 30px -10px;
+  position: relative;
+}
+.section3__content h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #e74c3c;
+  margin-bottom: 20px;
+}
+.section3__content p {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+.section3__content a {
+  background: #e74c3c;
+  padding: 10px 20px;
+  color: #f4f4f4;
+  font-weight: 500;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  transition: 0.5s;
+}
+.section3__content a:hover {
+  transform: scale(1.2);
+}
+.section3__content::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 35%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #f4f4f4);
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.section4__content {
+  margin-bottom: 50px;
+}
+.section4__content h2 {
+  font-size: 5rem;
+}
+.section4__content ul {
+  font-size: 2rem;
+}
+.section4__chart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section4__infomation li {
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
+
+.section5 h2 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+.section5__img img {
+  max-width: 100%;
+  height: auto;
+}
+.section5__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section5__content img {
+  width: 50%;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.section5__text {
+  width: 50%;
+  padding: 0 50px;
+  font-size: 2rem;
+}
+
+.section6__title {
+  margin-bottom: 50px;
+  font-size: 4rem;
+  font-weight: bold;
+}
+.section6 table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1.8rem;
+}
+.section6 th, .section6 td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+.section6 th {
+  background-color: #f2f2f2;
+}
+
+.section7 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+}
+.section7__form {
+  margin: 0 auto;
+}
+.section7__form h2 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+.section7__form form input {
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #e74c3c;
+  margin-right: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.section7__form form button {
+  padding: 10px 20px;
+  background: #e74c3c;
+  border-radius: 30px;
+  border: none;
+}
+
+footer {
+  background-color: #2c3e50;
+}
+footer p {
+  color: #ffffff;
+  padding: 8% 0 5% 0;
+}
+
+/*# sourceMappingURL=style.css.map */
